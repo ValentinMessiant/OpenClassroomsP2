@@ -1,0 +1,19 @@
+Ne comptait pas headache:
+ - Suppression de la variable 'headCount' car inutile
+ - Utilisation de la variable 'headacheCount' définie au début
+ - Compteur valide
+
+Ne comptait pas rash:
+ - Mauvaise orthographe du mot 'rash' qui était écrit 'resh'
+ - Compteur valide
+
+Mauvais compteur pour pupil:
+ - Recherchait toutes les occurences de 'pupil' alors qu'il y a différents symptomes contenant 'pupil' comme "dialated pupils" ou bien "constricted pupils"
+ - Précisions ajoutées sur la recherche de 'pupil': 'equals' au lieu de 'contains, "dialated pupils" au lieu de "pupil"
+
+Modification de la fonction Main:
+ - Enlever la logique se trouvant dans la fonction main()
+ - Mettre toute la logique dans des fonctions de la classe
+ - Appeler ces fonctions dans main()
+
+Suppression de commentaires inutiles et ajouts de commentaires utiles

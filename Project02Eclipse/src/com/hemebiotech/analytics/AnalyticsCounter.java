@@ -11,33 +11,48 @@ public class AnalyticsCounter {
 	
 	public static void main(String args[]) throws Exception {
 		// first get input
+		compteurMaladie();
+		
+		// next generate output
+		ecrireTexte();
+	}
+	
+	// Function for counting
+	public static void compteurMaladie() throws Exception{
+		// first get input
 		BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
 		String line = reader.readLine();
-
-		int i = 0;	// set i to 0
-		int headCount = 0;	// counts headaches
+		
+		// Loop on each line of the file
 		while (line != null) {
-			i++;	// increment i
-			System.out.println("symptom from file: " + line);
+			// Diseases counter
 			if (line.equals("headache")) {
-				headCount++;
-				System.out.println("number of headaches: " + headCount);
+				headacheCount++;
 			}
-			else if (line.equals("rush")) {
+			else if (line.equals("rash")) {
 				rashCount++;
 			}
-			else if (line.contains("pupils")) {
+			else if (line.equals("dialated pupils")) {
 				pupilCount++;
 			}
 
 			line = reader.readLine();	// get another symptom
 		}
+		reader.close();
+	}
+	
+	public static void ecrireTexte() throws Exception{
 		
 		// next generate output
+		// Create file result.out
 		FileWriter writer = new FileWriter ("result.out");
+		
+		// Write in result.out
 		writer.write("headache: " + headacheCount + "\n");
 		writer.write("rash: " + rashCount + "\n");
 		writer.write("dialated pupils: " + pupilCount + "\n");
+		
+		// Close result.out
 		writer.close();
 	}
 }
