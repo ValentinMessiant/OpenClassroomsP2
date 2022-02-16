@@ -10,6 +10,7 @@ Ne comptait pas rash:
 Mauvais compteur pour pupil:
  - Recherchait toutes les occurences de 'pupil' alors qu'il y a différents symptomes contenant 'pupil' comme "dialated pupils" ou bien "constricted pupils"
  - Précisions ajoutées sur la recherche de 'pupil': 'equals' au lieu de 'contains, "dialated pupils" au lieu de "pupil"
+ - Compteur valide
 
 Modification de la fonction Main:
  - Enlever la logique se trouvant dans la fonction main()
@@ -17,3 +18,5 @@ Modification de la fonction Main:
  - Appeler ces fonctions dans main()
 
 Suppression de commentaires inutiles et ajouts de commentaires utiles
+
+Ordonner les éléments d'une collection ou d'une liste par ordre alphabétique
