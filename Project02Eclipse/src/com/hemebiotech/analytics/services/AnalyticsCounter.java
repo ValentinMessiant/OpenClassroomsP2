@@ -7,21 +7,21 @@ public class AnalyticsCounter {
 	
 	public void ApplicationAnalyticsCounter() throws Exception {
 		
-		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile("symptoms.txt");
+		ISymptomReader readSymptomDataFromFile = new ReadSymptomDataFromFile("symptoms.txt");
 		if (!readSymptomDataFromFile.GetSymptoms().isEmpty()) {
 			
-			// Count the occurence of symptoms
-			SymptomCounter symptomCounter = new SymptomCounter();
+			// Count the occurrence of symptoms
+			ISymptomCounter symptomCounter = new SymptomCounterUsingHashMap();
 			HashMap<String, Integer> symptomOccurences = symptomCounter.SymptomOccurences(readSymptomDataFromFile.GetSymptoms());
 			
 			
 			// Sort the symptoms
-			SymptomOrder symptomOrder = new SymptomOrder();
+			ISymptomOrder symptomOrder = new SymptomOrderUsingTreeMap();
 			TreeMap<String, Integer> orderSymptoms = symptomOrder.OrderSymptoms(symptomOccurences);
 			
 			
-			// Write the symptoms and number of occurence in a new file
-			SymptomWriter symptomWriter = new SymptomWriter();
+			// Write the symptoms and number of occurrence in a new file
+			ISymptomWriter symptomWriter = new SymptomWriterInFile();
 			symptomWriter.SymptomsWriter(orderSymptoms);
 		}
 		else {

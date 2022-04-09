@@ -6,7 +6,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class SymptomWriter implements ISymptomsWriter{
+public class SymptomWriterInFile implements ISymptomWriter{
 
 	@Override
 	public void SymptomsWriter(TreeMap<String, Integer> symptomOrdered) {

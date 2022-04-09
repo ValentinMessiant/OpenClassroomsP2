@@ -3,7 +3,7 @@ package com.hemebiotech.analytics.services;
 import java.util.HashMap;
 import java.util.List;
 
-public class SymptomCounter implements ISymptomCounter{
+public class SymptomCounterUsingHashMap implements ISymptomCounter{
 	
 	
 	@Override
@@ -12,7 +12,7 @@ public class SymptomCounter implements ISymptomCounter{
 		
 		for (String symptom : listSymptoms) {
 			if(symptomOccurences.containsKey(symptom)) {
-				// Increment the occurence of the symptom by 1
+				// Increment the occurrence of the symptom by 1
 				symptomOccurences.put(symptom, symptomOccurences.get(symptom)+1);
 			}
 			else {

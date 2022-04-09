@@ -12,7 +12,7 @@ import java.util.TreeMap;
 
 public interface ISymptomOrder {
 	/**
-	 * @param NonOrderedSymptoms a map with the name of symptoms as the key and the number of occurence as the value
+	 * @param NonOrderedSymptoms a map with the name of symptoms as the key and the number of occurrence as the value
 	 * 
 	 * @return the TreeMap with all the symptoms sorted by names
 	 */

@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Count every occurence in a list of symptoms sent in parameters
+ * Count every occurrence in a list of symptoms sent in parameters
  * Set the symptom's name as the key
- * and the number of occurence as the value
+ * and the number of occurrence as the value
  * 
  * The returned map is not sorted
  * 
@@ -18,7 +18,7 @@ public interface ISymptomCounter {
 	/**
 	 * @param listSymptoms a list of symptoms with many duplications
 	 * 
-	 * @return a hashmap with the name of the symptom as the key and his number of occurence as the value
+	 * @return a HashMap with the name of the symptom as the key and his number of occurrence as the value
 	 */
 	
 	HashMap<String, Integer> SymptomOccurences(List<String> listSymptoms);
