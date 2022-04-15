@@ -15,5 +15,5 @@ public interface ISymptomWriter {
 	 * @param symptomOrdered a TreeMap that contains name and number of occurrence of the symptoms
 	 */
 	
-	void SymptomsWriter(TreeMap<String, Integer> symptomOrdered);
+	void symptomsWriter(TreeMap<String, Integer> symptomOrdered);
 }

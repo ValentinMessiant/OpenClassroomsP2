@@ -21,5 +21,5 @@ public interface ISymptomCounter {
 	 * @return a HashMap with the name of the symptom as the key and his number of occurrence as the value
 	 */
 	
-	HashMap<String, Integer> SymptomOccurences(List<String> listSymptoms);
+	HashMap<String, Integer> symptomOccurences(List<String> listSymptoms);
 }

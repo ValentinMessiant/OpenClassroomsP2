@@ -7,7 +7,7 @@ public class SymptomCounterUsingHashMap implements ISymptomCounter{
 	
 	
 	@Override
-	public HashMap<String, Integer> SymptomOccurences(List<String> listSymptoms){
+	public HashMap<String, Integer> symptomOccurences(List<String> listSymptoms){
 		HashMap<String, Integer> symptomOccurences = new HashMap<String, Integer>();
 		
 		for (String symptom : listSymptoms) {
@@ -20,7 +20,6 @@ public class SymptomCounterUsingHashMap implements ISymptomCounter{
 				symptomOccurences.put(symptom, 1);
 			}
 		}
-		System.out.println("hashmap: " + symptomOccurences);
 		return symptomOccurences;
 	}
 }

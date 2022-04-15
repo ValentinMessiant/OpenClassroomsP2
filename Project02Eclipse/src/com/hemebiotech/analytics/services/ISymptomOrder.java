@@ -16,5 +16,5 @@ public interface ISymptomOrder {
 	 * 
 	 * @return the TreeMap with all the symptoms sorted by names
 	 */
-	TreeMap<String, Integer> OrderSymptoms(HashMap<String, Integer> NonOrderedSymptoms);
+	TreeMap<String, Integer> orderSymptoms(HashMap<String, Integer> nonOrderedSymptoms);
 }

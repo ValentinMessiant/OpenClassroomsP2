@@ -6,10 +6,9 @@ import java.util.TreeMap;
 public class SymptomOrderUsingTreeMap implements ISymptomOrder{
 	
 	@Override
-	public TreeMap<String, Integer> OrderSymptoms(HashMap<String, Integer> nonOrderedSymptoms){
+	public TreeMap<String, Integer> orderSymptoms(HashMap<String, Integer> nonOrderedSymptoms){
 		TreeMap<String, Integer> symptomOrder = new TreeMap<String, Integer>(nonOrderedSymptoms);
 
-		System.out.println("treemap: " + symptomOrder);
 		return symptomOrder;
 	}
 }
