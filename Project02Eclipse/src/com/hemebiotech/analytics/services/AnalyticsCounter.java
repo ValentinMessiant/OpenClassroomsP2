@@ -8,11 +8,11 @@ public class AnalyticsCounter {
 	public void ApplicationAnalyticsCounter() throws Exception {
 		
 		ISymptomReader readSymptomDataFromFile = new ReadSymptomDataFromFile("symptoms.txt");
-		if (!readSymptomDataFromFile.GetSymptoms().isEmpty()) {
+		if (!readSymptomDataFromFile.getSymptoms().isEmpty()) {
 			
 			// Count the occurrence of symptoms
 			ISymptomCounter symptomCounter = new SymptomCounterUsingHashMap();
-			HashMap<String, Integer> symptomOccurences = symptomCounter.SymptomOccurences(readSymptomDataFromFile.GetSymptoms());
+			HashMap<String, Integer> symptomOccurences = symptomCounter.SymptomOccurences(readSymptomDataFromFile.getSymptoms());
 			
 			
 			// Sort the symptoms
